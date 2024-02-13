@@ -2,25 +2,25 @@ package herencia.ejemplo3;
 
 public class Student extends Person {
 
-    private String major;
+    private String profession;
     private String id;
 
-    public Student(String name, int age, String major, String id) {
+    public Student(String name, int age, String profession, String id) {
         super(name, age);
-        this.major = major;
+        this.profession = profession;
         this.id = id;
     }
 
-    public Student(String name, int age, String major) {
-        this(name, age, major, "No ID");
+    public Student(String name, int age, String profession) {
+        this(name, age, profession, "No ID");
     }
 
-    public String getMajor() {
-        return major;
+    public String getProfession() {
+        return profession;
     }
 
-    public void setMajor(String major) {
-        this.major = major;
+    public void setProfession(String profession) {
+        this.profession = profession;
     }
 
     public String getId() {
@@ -34,7 +34,7 @@ public class Student extends Person {
     @Override
     public void showInformation() {
         super.showInformation();
-        System.out.println("Major: " + major);
+        System.out.println("Profession: " + profession);
         System.out.println("ID: " + id);
     }
 }
