@@ -14,6 +14,7 @@ public class School {
     }
 
     public void addStudent(Student student) {
+
         students.add(student);
     }
 

@@ -1,11 +1,11 @@
-package agregacion;
+package agregacion.ejemplo3;
 
 public class Factura {
     private String numeroFactura;
     private String fecha;
-    Producto producto;
+    agregacion.Producto producto;
 
-    public Factura(String numeroFactura, String fecha, Producto producto) {
+    public Factura(String numeroFactura, String fecha, agregacion.Producto producto) {
         this.numeroFactura = numeroFactura;
         this.fecha = fecha;
         this.producto = producto;
@@ -27,11 +27,11 @@ public class Factura {
         this.fecha = fecha;
     }
 
-    public Producto getProducto() {
+    public agregacion.Producto getProducto() {
         return producto;
     }
 
-    public void setProducto(Producto producto) {
+    public void setProducto(agregacion.Producto producto) {
         this.producto = producto;
     }
 
